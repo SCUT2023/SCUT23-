@@ -139,11 +139,11 @@
         }
         .dhimg{
             width:500px;
-            height:200px;
+            height:170px;
             background-image: url(./网页素材/gzrs.png);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: contain;
+            background-size: cover;
             display: flex;
             float:left;
             flex:1;
@@ -163,6 +163,7 @@
             background-position: center;
             background-size: contain;
             display: flex;
+            position: relative;
             float:left;
             flex:1;
             margin-left: 160px;
@@ -171,6 +172,12 @@
             justify-content: center;
             text-align: center;
             flex-direction: row;
+        }
+        #dhimg_{
+            width: 500px;
+            height: 170px;
+            position: relative;
+            top: 2px;
         }
         .bottom_ {
             width: 100%;
@@ -211,7 +218,7 @@
     </div>
     <hr color="#F0F0F0" width="100%" size="2px">
     <div class="backgroundall">
-        <div class="dhimg"> <a class="navigation" href="https://mp.weixin.qq.com/s/3WhqZVtJ-BSwn7-7qqNqQg" target="_blank"><img height="180px"width="500px"></a></div>
+        <div class="dhimg"> <a class="navigation" href="https://mp.weixin.qq.com/s/3WhqZVtJ-BSwn7-7qqNqQg" target="_blank"><img id="dhimg_"></a></div>
         <div class="dhimg1"><a class="navigation" href=""></a></div>
         <div class="dhimg1"><a class="navigation" href=""></a></div>
         <div class="dhimg1"><a class="navigation" href=""></a></div>
@@ -220,6 +227,7 @@
         <p>© 2021 SCUT23软双网站 All Rights Reserved</p>
     </div>
     <div class="adtext"><span id="adtext">原神阿莫斯之弓点击就送</span></div>
-    <div class="ad"><a class="a-ad" href="https://www.biligame.com/detail/?id=105667&sourceFrom=2000040011&spm_id_from=333.337.0.0" target="_blank"><img height="190px"width="200px"></a></div>
+    <div class="ad"><a class="a-ad" href="https://www.biligame.com/detail/?id=105667&sourceFrom=2000040011&spm_id_from=333.337.0.0" target="_blank"><img height="200px"width="200px"></a></div>
+    <script src="main.js"></script>
 </body>
 </html>

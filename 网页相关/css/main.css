@@ -8,6 +8,7 @@
     background-image: url("../img/backgroundimg.jpg");
     background-size: cover;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 .logo{
     width: 200px;
@@ -61,6 +62,123 @@
     }
 }
 /* /顶部标题和图片 */
+/* 导航栏 */
+.nav{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    line-height:50px;
+    background-color: rgba(110, 110, 110, 1);
+    position: relative;
+    top:1px;
+    }
+.nav .wrap{
+    width: 1226px;
+    margin: 0 auto;
+}
+.nav .wrap .nav-left{
+    float: left;
+
+}
+.nav .wrap .nav-right{
+    float: right;
+
+}
+.nav .wrap li{
+    float:left;
+    position: relative;
+}
+.nav .wrap li span{
+    color:#424242;
+    margin:0 4px;
+    font-size: 20px;
+}
+.nav .wrap .a{
+    color:#b0b0b0;
+}
+.wechat-code{
+    width:124px;
+    height: 0;
+    background-color:#fff;
+    box-shadow:0 1px 5px #aaa;
+    position: absolute;
+    top:50px;
+    left:50%;
+    margin-left:-72px;
+    overflow: hidden;
+}
+.wechat-code img{
+    width:90px;
+    margin:18px 18px 0;
+}
+.wechat-code p{
+    color:#333;
+    font-size: 12px;
+    line-height: 14px;
+}
+.nav-left li:hover>.wechat-code{
+    height: 130px;
+}
+.wechat-code-font:hover>a{
+    color: #ff6700;
+}
+.stri{
+    width:0;
+    height:0;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -16px;
+    display: none;
+}
+.nav-left>li:hover>.stri{
+    display: block;
+}
+.personal-inf{
+    width:120px;
+    height:50px;
+    background-color: rgba(110, 110, 110, 1);
+    margin-left:25px;
+}
+.personal-inf a{
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    position: relative;
+    right:3px
+}
+.personal-inf:hover{
+    background-color: #fff;
+}
+.personal-inf:hover>a{
+    color: #ff6700;
+}
+.personal-inf-list{
+    width:316px;
+    height:0px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    position:absolute;
+    right: 0;
+    top:50px;
+    color #424242;
+    overflow: hidden;
+    line-height: 100px;
+}
+.personal-inf:hover>.personal-inf-list{
+    height: 100px;
+}
+@font-face {
+    font-family: 'navfont';
+    src: url(../字体文件/chinese/SourceHanSansSC-Bold.otf);
+}
+.nav a,p{
+    font-family: navfont;
+}
+/* /导航栏 */
 /* 广告 */
 .ad{
     width: 150px;
@@ -95,6 +213,31 @@
     100%{
         opacity: 1;
     }
+}
+.adtext{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(181, 188, 182);
+    position: fixed;
+    left: 10px;
+    bottom: 210px;
+    text-align: center;
+}
+.ad-1{
+    width:200px;
+    height: 200px;
+    background-image: url("../网页素材/ad.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    left:10px;
+    bottom: 10px;
+}
+.adtext span{
+    font-size: 14px;
+    position: relative;
+    top: -90px;
+    color: #ff6700;
 }
 /* /广告 */
 /* 底部 */

@@ -29,7 +29,7 @@
 .title h1 a{
     font-size: 100px;
     color:rgba(39, 162, 115, 0.7); 
-    animation: dh 1s linear 0s 1;
+    animation: adh 1s linear 0s 1;
     animation-play-state: paused;
 }
 .title h1 a:hover{
@@ -39,14 +39,50 @@
 .logo img{
     transform: scale(1.39);
 }
-@keyframes dh{
+@keyframes adh{
     0%{
         font-size: 100px;
     }
     50%{
-        font-size: 120px;
+        font-size: 110px;
     }
     100%{
         font-size: 100px;
     }
 }
+/* /顶部标题和图片 */
+/* 广告 */
+.ad{
+    width: 150px;
+    height: 320px;
+    position: absolute;
+    top:444px;
+    right: 14px;
+    background-image: url(../img/adsun2.jpg);
+    background-size: 100% auto;
+    overflow: hidden;
+}
+.ad img{
+    animation: addh 0.5s linear 0s infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+    width:100%;
+    height:auto;
+    top:1px;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes addh{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+/* /广告 */

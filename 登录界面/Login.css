@@ -1,0 +1,168 @@
+<<<<<<< HEAD:Login.css
+*{
+    padding:0px;
+    margin:0px;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+body {
+    background-image: url("images/background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*中心的模块*/
+.container {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(255, 255, 255,0.1);
+    box-shadow: 0px 0px 20px rgb(152, 149, 149);
+
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    flex-direction:column;
+
+    position:relative;
+}
+
+/*表单题目*/
+#title{
+    text-align:center;
+    padding-top:10px;
+    position:relative;
+    top:50px;
+    font-size:45px;
+}
+
+/*表单内容设置*/
+#form-1 {
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    top: 110px;
+
+}
+
+
+/*账号密码以及登录案件设置*/
+#form-1 input,button{
+    width:220px;
+    height:40px;
+    border:none;
+    outline:none;
+    margin-bottom:20px;
+    font-size:15px;
+    padding-left:40px;
+    box-sizing:border-box;
+}
+button{
+   background-color:rgb(14, 203, 229,0.8);
+   letter-spacing:2px;
+   padding-left:0px;
+}
+button:hover{
+    box-shadow:1px 1px 5px black;
+}
+input:hover {
+    box-shadow: 1px 1px 5px black;
+}
+/*调整文字图标位置*/
+.main{
+    position:relative;
+}
+span {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+=======
+*{
+    padding:0px;
+    margin:0px;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+body {
+    background-image: url("images/background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*中心的模块*/
+.container {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(255, 255, 255,0.1);
+    box-shadow: 0px 0px 20px rgb(152, 149, 149);
+
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    flex-direction:column;
+
+    position:relative;
+}
+
+/*表单题目*/
+#title{
+    text-align:center;
+    padding-top:10px;
+    position:relative;
+    top:50px;
+    font-size:45px;
+}
+
+/*表单内容设置*/
+#form-1 {
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    top: 110px;
+
+}
+
+
+/*账号密码以及登录案件设置*/
+#form-1 input,button{
+    width:220px;
+    height:40px;
+    border:none;
+    outline:none;
+    margin-bottom:20px;
+    font-size:15px;
+    padding-left:40px;
+    box-sizing:border-box;
+}
+button{
+   background-color:rgb(14, 203, 229,0.8);
+   letter-spacing:2px;
+   padding-left:0px;
+}
+button:hover{
+    box-shadow:1px 1px 5px black;
+}
+input:hover {
+    box-shadow: 1px 1px 5px black;
+}
+/*调整文字图标位置*/
+.main{
+    position:relative;
+}
+span {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+>>>>>>> f02df0939473d4fc927779f6ef5cc34d019f5ca3:登录界面/Login.css
+}

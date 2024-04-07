@@ -128,6 +128,7 @@
     left:50%;
     margin-left:-72px;
     overflow: hidden;
+    z-index: 1;
 }
 .wechat-code img{
     width:90px;
@@ -186,7 +187,7 @@
     position:absolute;
     right: 0;
     top:50px;
-    color #424242;
+    color:#424242;
     overflow: hidden;
     line-height: 100px;
 }
@@ -201,6 +202,90 @@
     font-family: navfont;
 }
 /* /导航栏 */
+/* banner */
+.banner{
+width: 100%;
+height:539px;
+}
+.banner-wrap{
+    position: relative;
+}
+.banner-img{
+    width: 600px;
+    height:459px;
+    position: absolute;
+    z-index: 0;
+    top:249px;
+    left: 405px;
+}
+.banner-img-2{
+    width:120px;
+    height:459px;
+    position: absolute;
+    z-index: 0;
+    top:249px;
+    left:1005px;
+}
+.banner .slide{
+    width:234px;
+    height:420px;
+    padding:20px 0px;
+    background-color: rgba(105,101,101,0.7);
+    position: absolute;
+    left:171px;
+    top:248px;
+}
+.banner .slide>ul>li{
+    height: 84px;
+    line-height: 42px;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 14px;
+    font-family: bannerfont;
+}
+.banner .slide>ul>li>a{
+    color: #fff;
+}
+.banner .slide>ul>li:hover{
+    background-color: #f4ede8;
+}
+.banner .slide>ul>li:hover>a{
+    color: #ff6700;
+}
+@font-face {
+    font-family: 'bannerfont';
+    src: url(../字体文件/chinese/SourceHanSerifSC-ExtraLight.otf);
+}
+.slide-content{
+    width: 720px;
+    height: 460px;
+    border:1px solid #6d6a6a9a;
+    border-left: none;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+    background-color: #fff;
+    float: right;
+    position: absolute;
+    top:0;
+    left:234px;
+    display: none;
+}
+.slide-content:hover,#slide-1:hover #slide-content-1{
+    display: block;
+}
+.slide-content:hover,#slide-2:hover #slide-content-2{
+    display: block;
+}
+.slide-content:hover,#slide-3:hover #slide-content-3{
+    display: block;
+}
+.slide-content:hover,#slide-4:hover #slide-content-4{
+    display: block;
+}
+.slide-content:hover,#slide-5:hover #slide-content-5{
+    display: block;
+}
+/* /banner */
 /* 广告 */
 .ad{
     width: 150px;
@@ -275,7 +360,6 @@
     font-style: normal;
     font-weight: 400;
     letter-spacing: 1.4px;
-    position: absolute;
     border-top: 1px solid rgba(94, 91, 91, 0.475);
     box-shadow: 0px 10px 20px #00000014;
     bottom: 0px;

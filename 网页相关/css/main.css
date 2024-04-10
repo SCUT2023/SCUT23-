@@ -347,6 +347,19 @@ height:539px;
     color: #ff6700;
 }
 /* /广告 */
+/* 时间 */
+.time{
+    width: 235px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-family: bannerfont;
+    position: absolute;
+    top:161px;
+    right:636px;
+}
+/* /时间 */
 /* 底部 */
 .bottom_{
     width: 100%;

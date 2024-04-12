@@ -17,8 +17,8 @@
         <div class="logo">
             <img id="logo" src="./img/logo.png" alt="logo" height="200px">
          </div>
-         <div class="amiya">
-            <img src="./img/amiya.gif" alt="阿米娅" height="200px">
+         <div class="amiya" onclick="replaceimgamiya()">
+            <img src="./img/amiya.gif" alt="阿米娅" height="200px" id="amiyaimg">
          </div>
     </div>
     <!-- /顶部标题加图片 -->
@@ -61,6 +61,8 @@
                 <ul>
                     <li id="slide-1">
                         <a href="#">每周要闻</a>
+                        <iconpark-icon name="circle-double-right" id="circle-double-right1"></iconpark-icon>
+                        <script src="https://lf1-cdn-tos.bytegoofy.com/obj/iconpark/icons_32467_1.e727447070c9bbfcbb43e0c2032a7029.js"></script>
                         <div class="slide-content" id="slide-content-1">
                             <a href="#"><img src="#"></a>
                                 <h2>每周要闻</h2>
@@ -69,6 +71,7 @@
                     </li>
                     <li id="slide-2">
                         <a href="#">软双图库</a>
+                        <iconpark-icon name="circle-double-right" id="circle-double-right1"></iconpark-icon>
                         <div class="slide-content" id="slide-content-2">
                             <a href="#"><img src="#"></a>
                                 <h2>软双图库</h2>
@@ -77,6 +80,7 @@
                     </li>
                     <li id="slide-3">
                         <a href="#">知识图书馆</a>
+                        <iconpark-icon name="circle-double-right" id="circle-double-right1"></iconpark-icon>
                         <div class="slide-content" id="slide-content-3">
                             <a href="#"><img src="#"></a>
                                 <h2>知识图书馆</h2>
@@ -85,6 +89,7 @@
                     </li>
                     <li id="slide-4">
                         <a href="https://mp.weixin.qq.com/s/3WhqZVtJ-BSwn7-7qqNqQg">公众号文章</a>
+                        <iconpark-icon name="circle-double-right" id="circle-double-right1"></iconpark-icon>
                         <div class="slide-content" id="slide-content-4">
                             <a href="#"><img src="#"></a>
                                 <h2>公众号文章</h2>
@@ -93,6 +98,7 @@
                     </li>
                     <li id="slide-5">
                         <a href="#">软双图鉴</a>
+                        <iconpark-icon name="circle-double-right" id="circle-double-right1"></iconpark-icon>
                         <div class="slide-content" id="slide-content-5">
                             <a href="#"><img src="#"></a>
                                 <h2>软双图鉴</h2>
@@ -114,7 +120,7 @@
     <!-- 时间 -->
     <!-- /时间 -->
     <div class="time">
-        <p><span id="time">waiting…………</span></p>
+        <p><span id="time">waiting……</span><span id="tips">loading……</span></p>
     </div>
     <!-- 底部 -->
     <div class="bottom_">

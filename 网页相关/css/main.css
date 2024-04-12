@@ -190,6 +190,7 @@
     color:#424242;
     overflow: hidden;
     line-height: 100px;
+    z-index: 2;
 }
 .personal-inf:hover>.personal-inf-list{
     height: 100px;
@@ -237,10 +238,10 @@ height:539px;
 }
 .banner .slide>ul>li{
     height: 84px;
-    line-height: 42px;
+    line-height: 84px;
     text-align: left;
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 20px;
     font-family: bannerfont;
 }
 .banner .slide>ul>li>a{
@@ -285,6 +286,15 @@ height:539px;
 .slide-content:hover,#slide-5:hover #slide-content-5{
     display: block;
 }
+#circle-double-right1{
+    float:right;
+    padding-right: 20px;
+    top:29px;
+    font-size: 26px;
+    margin-left: 20px;
+    position: relative;
+}
+
 /* /banner */
 /* 广告 */
 .ad{
@@ -349,7 +359,7 @@ height:539px;
 /* /广告 */
 /* 时间 */
 .time{
-    width: 235px;
+    width: 400px;
     height: 30px;
     line-height: 30px;
     text-align: center;
@@ -357,7 +367,24 @@ height:539px;
     font-family: bannerfont;
     position: absolute;
     top:161px;
-    right:636px;
+    right:463px;
+}
+#time{
+    font-size: 14px;
+    font-family: regularfont;
+    position: relative;
+    float: left;
+}
+#tips{
+    font-size: 12px;
+    font-family: regularfont;
+    position: relative;
+    margin-left:20px;
+    float: right;
+}
+@font-face {
+    font-family: 'regularfont';
+    src: url(../字体文件/chinese/SourceHanSerifSC-Regular.otf);
 }
 /* /时间 */
 /* 底部 */

@@ -1,18 +1,115 @@
-/* 背景图 */
-.allbackground{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    min-width: 1000px;
-    z-index: -10;
-    zoom:1;
-    background-color:#fff;
-    background-image:url(./img/background.jpg);
-    background-size: cover;
-    -webkit-background-size:cover;
-    -o-background-size:cover;
-    background-position:center 0;
-
+/* 内容 */
+.herolist-warp{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
+.card {
+    /* flex布局下元素不按比例缩放 */
+    position: relative;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    /* flex 子元素 纵向排列 */
+    flex-direction: column;
+    /* 增加个阴影 */
+    box-shadow: 0 0 30px #2c2c2c;
+    color:#2c2c2c;
+}
+.photo {
+    position: absolute;
+    /* 默认为放大 */
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.photo::before {
+    /* 通过before增加渐变背景实现遮罩，让文字默认看起来清晰一些 */
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #333, transparent);
+}
+.card:hover .photo::before{
+    /* 缩小时隐藏 */
+    display: none;
+}
+
+.photo img {
+    /* 图片高宽均为100% */
+    /* 然后按照cover缩放，裁切长边 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .photo {
+    /* 鼠标移上变小 */
+    width: 120px;
+    height: 120px;
+    top: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #111;
+}
+
+h1 {
+    position: absolute;
+    top: 380px;
+    transition: 0.5s;
+}
+
+.card:hover h1 {
+    position: absolute;
+    top: 170px;
+}
+
+h2 {
+    margin-top: 220px;
+    width: 80%;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #111;
+}
+
+p {
+    width: 90%;
+    /* 段落缩进2个字符大小 */
+    text-indent: 2em;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    padding: 12px 36px;
+    border: 1px solid #111;
+    border-radius: 8px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+}
+
+a:hover {
+    color: #ca7d11;
+    background-color: rgba(199, 180, 180, 0.2);
+}
+/* /内容 */
